@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <div class="cv-btn">
+  <a href="curriculo_vanessa.pdf" download>
+    <i class="fa-solid fa-file-arrow-down"></i> Baixar Currículo
+  </a>
+</div>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +18,14 @@
         <h1>Vanessa Gomes Martins da Silva</h1>
         <p class="subtitle">Tecnologia • Machine Learning • HPC • Física Computacional</p>
 
-        <div class="links">
-            <a href="https://github.com/VanessaMartiins" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/vanessagmartins" target="_blank">LinkedIn</a>
-            <a href="http://lattes.cnpq.br/7716509150901876" target="_blank">Lattes</a>
-        </div>
+<div class="social-icons">
+  <a href="https://github.com/VanessaMartiins" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/vanessagmarts/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://lattes.cnpq.br" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
+  <a href="mailto:vanessagmarts@gmail.com"><i class="fas fa-envelope"></i></a>
+</div>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </header>
 
     <section>
@@ -143,6 +152,19 @@
   </p>
 </footer>
 
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+  });
+</script>
 
 </body>
+    <button id="theme-toggle" aria-label="Alternar tema">
+  🌙
+</button>
+
 </html>
