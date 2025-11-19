@@ -1,170 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <div class="cv-btn">
-  <a href="curriculo_vanessa.pdf" download>
-    <i class="fa-solid fa-file-arrow-down"></i> Baixar Currículo
-  </a>
-</div>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Vanessa Gomes Martins da Silva</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Vanessa Gomes Martins da Silva</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Vanessa Gomes Martins da Silva</h1>
-        <p class="subtitle">Tecnologia • Machine Learning • HPC • Física Computacional</p>
+  <!-- Botão Dark Mode -->
+  <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
 
-<div class="social-icons">
-  <a href="https://github.com/VanessaMartiins" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/vanessagmarts/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://lattes.cnpq.br" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
-  <a href="mailto:vanessagmarts@gmail.com"><i class="fas fa-envelope"></i></a>
-</div>
+  <!-- HEADER -->
+  <header>
+    <h1>Vanessa Gomes Martins da Silva</h1>
+    <p class="subtitle">Tecnologia • Machine Learning • HPC • Física Computacional</p>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </header>
+    <!-- Ícones Redes -->
+    <div class="social-icons">
+      <a href="https://github.com/VanessaMartiins" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/vanessagmarts/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://lattes.cnpq.br" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="mailto:vanessagmarts@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
 
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>
-            Estudante de Física Computacional (UFF) com experiência em tecnologia, análise de dados, 
-            computação científica, Machine Learning e HPC. Atuei no suporte a sistemas MES, 
-            SAP e infraestrutura crítica, além de possuir experiência com Python, Fortran 90, SQL e 
-            desenvolvimento de soluções computacionais. Atualmente desenvolvo meu TCC focado em 
-            classificação astronômica com redes neurais e um projeto de otimização e paralelização 
-            em HPC.
-        </p>
-    </section>
+    <!-- Botão para baixar currículo -->
+    <div class="cv-btn">
+      <a href="curriculo_vanessa.pdf" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Baixar Currículo
+      </a>
+    </div>
 
-    <section>
-        <h2>Projetos</h2>
+  </header>
 
-        <div class="project">
-            <h3>🧠 Classificação Fotométrica de Objetos Astronômicos (TCC)</h3>
-            <p>
-                Implementação de uma rede neural em PyTorch para classificação de objetos do SDSS/WISE 
-                (Star/Galaxy/QSO). O projeto será publicado após a defesa oficial.
-            </p>
-        </div>
+  <!-- SOBRE MIM -->
+  <section class="section">
+    <h2>Sobre Mim</h2>
+    <p>
+      Estudante de Física Computacional (UFF) com experiência em tecnologia, análise de dados, 
+      computação científica, Machine Learning e HPC. Atuei no suporte a sistemas MES, SAP e 
+      infraestrutura crítica, além de possuir experiência com Python, Fortran 90, SQL e desenvolvimento 
+      de soluções computacionais. Atualmente desenvolvo meu TCC focado em classificação astronômica com 
+      redes neurais e um projeto de otimização e paralelização em HPC.
+    </p>
+  </section>
 
-        <div class="project">
-            <h3>⚙️ HPC Traffic Model – Regra A (Fortran 90 + OpenMP)</h3>
-            <p>
-                Projeto de computação de alto desempenho envolvendo otimização de código, análise de 
-                complexidade e paralelização com OpenMP. Disponível após finalização da versão paralela.
-            </p>
-        </div>
+  <!-- PROJETOS -->
+  <section class="section">
+    <h2>Projetos</h2>
 
-    </section>
-<section id="habilidades" class="section">
-  <h2>Habilidades Técnicas</h2>
+    <div class="card">
+      <h3>🌌 Classificação Fotométrica de Objetos Astronômicos (TCC)</h3>
+      <p>Implementação de uma rede neural em PyTorch para classificar objetos do SDSS/WISE (Star/Galaxy/QSO).  
+      O projeto será publicado após a defesa oficial.</p>
+    </div>
 
-  <div class="skills-grid">
+    <div class="card">
+      <h3>🚗 Simulação HPC – Modelo de Tráfego (Regra A)</h3>
+      <p>
+        Implementação em Fortran 90, otimização manual, análise de complexidade e paralelização com OpenMP.  
+        Execução no cluster Moore e automação com Bash + SLURM.
+      </p>
+    </div>
 
-    <div class="skill-card">
-      <h3>Linguagens</h3>
+    <div class="card">
+      <h3>🧠 Pipeline One-vs-All para Classificação Astronômica</h3>
+      <p>
+        Classificação Star/Galaxy/QSO usando FLAML, XGBoost, LightGBM e CatBoost.  
+        Inclui pré-processamento, métricas e validações.
+      </p>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section">
+    <h2>Habilidades Técnicas</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>Linguagens</h3>
+        <ul>
+          <li>Python</li>
+          <li>Fortran 90</li>
+          <li>C, C++, C#</li>
+          <li>Java</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
+        <ul>
+          <li>PyTorch</li>
+          <li>Scikit-Learn</li>
+          <li>NumPy • Pandas</li>
+          <li>Pré-processamento e validação</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>HPC & Performance</h3>
+        <ul>
+          <li>OpenMP</li>
+          <li>SLURM</li>
+          <li>Profiling e otimização</li>
+          <li>Análise de complexidade</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Ferramentas & Sistemas</h3>
+        <ul>
+          <li>Git • GitHub • Linux • WSL</li>
+          <li>Jupyter Notebook</li>
+          <li>SAP (básico)</li>
+          <li>Sistemas MES e legados</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA PROFISSIONAL -->
+  <section class="section">
+    <h2>Experiência Profissional</h2>
+
+    <div class="job-card">
+      <h3>Técnico de Suporte I — TIVIT (2025)</h3>
       <ul>
-        <li>Python</li>
-        <li>Fortran 90</li>
-        <li>C • C++ • C#</li>
-        <li>Java</li>
-        <li>SQL</li>
+        <li>Monitoramento de CPDs, links, servidores e firewalls.</li>
+        <li>Atuação no Centro de Monitoramento e Controle.</li>
+        <li>Suporte a infraestrutura crítica alocada na CSN.</li>
       </ul>
     </div>
 
-    <div class="skill-card">
-      <h3>Machine Learning</h3>
+    <div class="job-card">
+      <h3>Técnica de Informática — CSN (2023–2025)</h3>
       <ul>
-        <li>PyTorch</li>
-        <li>Scikit-Learn</li>
-        <li>NumPy • Pandas</li>
-        <li>Pré-processamento e validação</li>
+        <li>Suporte a sistemas MES, SAP e sistemas legados.</li>
+        <li>Garantia da continuidade operacional industrial.</li>
+        <li>Atendimentos técnicos e manutenção de rotina.</li>
       </ul>
     </div>
 
-    <div class="skill-card">
-      <h3>HPC & Performance</h3>
+    <div class="job-card">
+      <h3>Estagiária — CSN (2022–2023)</h3>
       <ul>
-        <li>OpenMP</li>
-        <li>SLURM</li>
-        <li>Otimização e profiling</li>
-        <li>Análise de complexidade</li>
+        <li>1 ano e 8 meses na equipe de Manutenção de Sistemas MES.</li>
+        <li>Desenvolvimento de consultas SQL e melhorias internas.</li>
+        <li>Otimização de processos e tarefas técnicas.</li>
       </ul>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h3>Ferramentas e Sistemas</h3>
-      <ul>
-        <li>Git • GitHub • Linux • WSL</li>
-        <li>Jupyter Notebook</li>
-        <li>SAP (básico)</li>
-        <li>Sistemas MES e sistemas legados</li>
-      </ul>
-    </div>
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 — Vanessa Gomes Martins da Silva</p>
+    <p class="footer-links">
+      <a href="https://github.com/VanessaMartiins" target="_blank">GitHub</a> •
+      <a href="https://www.linkedin.com/in/vanessagmartins/" target="_blank">LinkedIn</a> •
+      <a href=" http://lattes.cnpq.br/7716509150901876" target="_blank">Lattes</a>
+    </p>
+  </footer>
 
-  </div>
-</section>
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
 
-    <section id="experiencia" class="section">
-  <h2>Experiência Profissional</h2>
-
-  <div class="job-card">
-    <h3>Técnico de Suporte I — TIVIT (2025)</h3>
-    <p>Atuação no CMC (Centro de Monitoramento e Controle), acompanhando operação de CPDs, links e equipamentos de rede.</p>
-    <ul>
-      <li>Monitoramento de links, servidores, firewalls e roteadores.</li>
-      <li>Atendimento técnico e suporte à infraestrutura crítica.</li>
-      <li>Atuação alocada na CSN como provedora de serviços.</li>
-    </ul>
-  </div>
-
-  <div class="job-card">
-    <h3>Técnica de Informática — Companhia Siderúrgica Nacional (2023–2025)</h3>
-    <p>Atuação em escala na área industrial, prestando suporte a sistemas MES, sistemas legados e SAP.</p>
-    <ul>
-      <li>Suporte de sistemas industriais e garantia de disponibilidade operacional.</li>
-      <li>Atendimentos técnicos, manutenção e continuidade das operações.</li>
-      <li>Diagnóstico e resolução de problemas em sistemas críticos.</li>
-    </ul>
-  </div>
-
-  <div class="job-card">
-    <h3>Estagiária de TI — Companhia Siderúrgica Nacional (2022–2023)</h3>
-    <p>Estágio de 1 ano e 8 meses na equipe de Manutenção de Sistemas MES.</p>
-    <ul>
-      <li>Desenvolvimento de melhorias em SQL para sistemas produtivos.</li>
-      <li>Análise e execução de tarefas técnicas de rotina.</li>
-      <li>Otimização de processos e suporte interno.</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 — Vanessa Gomes Martins da Silva</p>
-  <p class="footer-links">
-    <a href="https://github.com/VanessaMartiins" target="_blank">GitHub</a> •
-    <a href="https://www.linkedin.com/in/vanessagmarts/" target="_blank">LinkedIn</a> •
-    <a href="https://lattes.cnpq.br/" target="_blank">Lattes</a>
-  </p>
-</footer>
-
-<script>
-  const toggle = document.getElementById("theme-toggle");
-  const body = document.body;
-
-  toggle.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
-  });
-</script>
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
 
 </body>
-    <button id="theme-toggle" aria-label="Alternar tema">
-  🌙
-</button>
-
 </html>
