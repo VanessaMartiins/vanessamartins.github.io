@@ -134,3 +134,83 @@ footer p {
   text-decoration: underline;
 }
 
+/* Botão Dark Mode */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+body.dark {
+  background: #1d1d1d;
+  color: #eaeaea;
+}
+
+/* Ajustes automáticos para dark mode */
+body.dark header,
+body.dark section,
+body.dark .skill-card,
+body.dark .job-card,
+body.dark footer {
+  background: #2a2a2a !important;
+  border-color: #444 !important;
+  color: #eaeaea !important;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  font-size: 28px;
+  margin: 0 12px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Dark mode para ícones */
+body.dark .social-icons a {
+  color: #ddd;
+}
+
+body.dark .social-icons a:hover {
+  color: #4aa8ff;
+}
+.cv-btn {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.cv-btn a {
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cv-btn a:hover {
+  background: #0056c7;
+}
+
+/* Dark mode */
+body.dark .cv-btn a {
+  background: #4aa8ff;
+}
+body.dark .cv-btn a:hover {
+  background: #1d8be6;
+}
