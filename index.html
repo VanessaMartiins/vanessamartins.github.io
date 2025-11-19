@@ -13,16 +13,16 @@
 </head>
 
 <body>
-
-  <!-- Botão Dark Mode -->
+  <!-- Botão Dark/Light -->
   <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
 
-  <!-- HEADER -->
+  <!-- CABEÇALHO -->
   <header>
-    <h1>Vanessa Gomes Martins da Silva</h1>
-    <p class="subtitle">Tecnologia • Machine Learning • HPC • Física Computacional</p>
+    <div class="header-inner">
+      <h1>Vanessa Gomes Martins da Silva</h1>
+      <p class="subtitle">Tecnologia • Machine Learning • HPC • Física Computacional</p>
 
-    <!-- Ícones Redes -->
+     <!-- Ícones Redes -->
     <div class="social-icons">
       <a href="https://github.com/VanessaMartiins" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/vanessagmartins/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -30,24 +30,24 @@
       <a href="mailto:vanemartiins@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 
-    <!-- Botão para baixar currículo -->
-    <div class="cv-btn">
-      <a href="Vanessa_Gomes_Curriculo.pdf" download>
-        <i class="fa-solid fa-file-arrow-down"></i> Baixar Currículo
-      </a>
+      <div class="cv-btn">
+        <!-- lembre de manter curriculo_vanessa.pdf na raiz do repositório -->
+        <a href="Vanessa_Gomes_Curriculo.pdf" download>
+          <i class="fa-solid fa-file-arrow-down"></i> Baixar Currículo
+        </a>
+      </div>
     </div>
-
   </header>
 
   <!-- SOBRE MIM -->
   <section class="section">
     <h2>Sobre Mim</h2>
     <p>
-      Estudante de Física Computacional (UFF) com experiência em tecnologia, análise de dados, 
-      computação científica, Machine Learning e HPC. Atuei no suporte a sistemas MES, SAP e 
-      infraestrutura crítica, além de possuir experiência com Python, Fortran 90, SQL e desenvolvimento 
-      de soluções computacionais. Atualmente desenvolvo meu TCC focado em classificação astronômica com 
-      redes neurais e um projeto de otimização e paralelização em HPC.
+      Estudante de Física Computacional (UFF) com experiência em tecnologia, análise de dados,
+      computação científica, Machine Learning e HPC. Atuei no suporte a sistemas MES, SAP e
+      infraestrutura crítica, além de possuir experiência com Python, Fortran 90, SQL e
+      desenvolvimento de soluções computacionais. Atualmente desenvolvo meu TCC focado em
+      classificação astronômica com redes neurais e um projeto de otimização e paralelização em HPC.
     </p>
   </section>
 
@@ -57,24 +57,35 @@
 
     <div class="card">
       <h3>🌌 Classificação Fotométrica de Objetos Astronômicos (TCC)</h3>
-      <p>Implementação de uma rede neural em PyTorch para classificar objetos do SDSS/WISE (Star/Galaxy/QSO).  
-      O projeto será publicado após a defesa oficial.</p>
+      <p>
+        Implementação de uma rede neural em PyTorch para classificar objetos do SDSS/WISE
+        (Star/Galaxy/QSO). O projeto será publicado após a defesa oficial.
+      </p>
+      <div class="tags">
+        <span>PyTorch</span><span>SDSS/WISE</span><span>ML</span>
+      </div>
     </div>
 
     <div class="card">
       <h3>🚗 Simulação HPC – Modelo de Tráfego (Regra A)</h3>
       <p>
-        Implementação em Fortran 90, otimização manual, análise de complexidade e paralelização com OpenMP.  
-        Execução no cluster Moore e automação com Bash + SLURM.
+        Implementação em Fortran 90, otimização manual, análise de complexidade e paralelização
+        com OpenMP. Execução no cluster Moore e automação com Bash + SLURM.
       </p>
+      <div class="tags">
+        <span>Fortran 90</span><span>OpenMP</span><span>SLURM</span>
+      </div>
     </div>
 
     <div class="card">
       <h3>🧠 Pipeline One-vs-All para Classificação Astronômica</h3>
       <p>
-        Classificação Star/Galaxy/QSO usando FLAML, XGBoost, LightGBM e CatBoost.  
-        Inclui pré-processamento, métricas e validações.
+        Classificação Star/Galaxy/QSO usando FLAML, XGBoost, LightGBM e CatBoost, com pipeline de
+        pré-processamento, métricas e validações cruzadas.
       </p>
+      <div class="tags">
+        <span>Python</span><span>FLAML</span><span>Classificação</span>
+      </div>
     </div>
   </section>
 
@@ -96,12 +107,11 @@
       </div>
 
       <div class="skill-card">
-        <h3>Machine Learning</h3>
+        <h3>Machine Learning & Dados</h3>
         <ul>
-          <li>PyTorch</li>
-          <li>Scikit-Learn</li>
-          <li>NumPy • Pandas</li>
-          <li>Pré-processamento e validação</li>
+          <li>PyTorch, Scikit-Learn</li>
+          <li>NumPy, Pandas, Matplotlib</li>
+          <li>Pipeline de ML, validação, métricas</li>
         </ul>
       </div>
 
@@ -109,8 +119,8 @@
         <h3>HPC & Performance</h3>
         <ul>
           <li>OpenMP</li>
-          <li>SLURM</li>
-          <li>Profiling e otimização</li>
+          <li>SLURM e uso de cluster</li>
+          <li>Profiling e otimização de código</li>
           <li>Análise de complexidade</li>
         </ul>
       </div>
@@ -118,17 +128,16 @@
       <div class="skill-card">
         <h3>Ferramentas & Sistemas</h3>
         <ul>
-          <li>Git • GitHub • Linux • WSL</li>
-          <li>Jupyter Notebook</li>
-          <li>SAP (básico)</li>
-          <li>Sistemas MES e legados</li>
+          <li>Git, GitHub, Linux, WSL</li>
+          <li>Jupyter Notebook, VS Code</li>
+          <li>SAP (básico), sistemas MES e legados</li>
         </ul>
       </div>
 
     </div>
   </section>
 
-  <!-- EXPERIÊNCIA PROFISSIONAL -->
+  <!-- EXPERIÊNCIA -->
   <section class="section">
     <h2>Experiência Profissional</h2>
 
@@ -137,7 +146,7 @@
       <ul>
         <li>Monitoramento de CPDs, links, servidores e firewalls.</li>
         <li>Atuação no Centro de Monitoramento e Controle.</li>
-        <li>Suporte a infraestrutura crítica alocada na CSN.</li>
+        <li>Suporte à infraestrutura crítica alocada na CSN.</li>
       </ul>
     </div>
 
@@ -155,7 +164,7 @@
       <ul>
         <li>1 ano e 8 meses na equipe de Manutenção de Sistemas MES.</li>
         <li>Desenvolvimento de consultas SQL e melhorias internas.</li>
-        <li>Otimização de processos e tarefas técnicas.</li>
+        <li>Otimização de processos e suporte técnico.</li>
       </ul>
     </div>
   </section>
@@ -166,18 +175,27 @@
     <p class="footer-links">
       <a href="https://github.com/VanessaMartiins" target="_blank">GitHub</a> •
       <a href="https://www.linkedin.com/in/vanessagmartins/" target="_blank">LinkedIn</a> •
-      <a href=" http://lattes.cnpq.br/7716509150901876" target="_blank">Lattes</a>
+      <a href="https://lattes.cnpq.br/7716509150901876" target="_blank">Lattes</a>
     </p>
   </footer>
 
-  <!-- DARK MODE SCRIPT -->
+  <!-- SCRIPT DARK/LIGHT COM MEMÓRIA -->
   <script>
     const toggle = document.getElementById("theme-toggle");
     const body = document.body;
 
+    // carrega preferência salva
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      body.classList.add("dark");
+      toggle.textContent = "☀️";
+    }
+
     toggle.addEventListener("click", () => {
       body.classList.toggle("dark");
-      toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+      const isDark = body.classList.contains("dark");
+      toggle.textContent = isDark ? "☀️" : "🌙";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
     });
   </script>
 
