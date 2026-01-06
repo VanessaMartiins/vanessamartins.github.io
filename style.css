@@ -261,9 +261,12 @@ body.dark .social-icons a:hover {
   }
 }
 
-.preview {
+.project-image {
   width: 100%;
-  max-width: 400px;
-  margin: 10px 0;
+  max-width: 420px;   /* tamanho ideal para card */
+  height: auto;
+  margin: 12px auto;
+  display: block;
   border-radius: 8px;
 }
+
