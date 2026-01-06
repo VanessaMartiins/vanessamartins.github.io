@@ -260,3 +260,10 @@ body.dark .social-icons a:hover {
     top: 12px;
   }
 }
+
+.preview {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
