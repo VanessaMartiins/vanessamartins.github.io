@@ -261,15 +261,18 @@ body.dark .social-icons a:hover {
   }
 }
 
-.project-image {
-  width: 100%;
-  max-width: 420px;   /* tamanho ideal para card */
-  height: auto;
-  margin: 12px auto;
-  display: block;
-  border-radius: 8px;
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #2ea44f; /* verde GitHub */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
 }
 
-.card {
-  max-width: 500px;
+.project-link:hover {
+  background-color: #2c974b;
 }
+
