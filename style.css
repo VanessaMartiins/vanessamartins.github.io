@@ -276,3 +276,19 @@ body.dark .social-icons a:hover {
   background-color: #2c974b;
 }
 
+.button.github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background-color: #24292e; /* GitHub */
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button.github:hover {
+  background-color: #2f363d;
+}
+
