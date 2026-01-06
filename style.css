@@ -270,3 +270,6 @@ body.dark .social-icons a:hover {
   border-radius: 8px;
 }
 
+.card {
+  max-width: 500px;
+}
