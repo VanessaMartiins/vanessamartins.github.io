@@ -275,4 +275,11 @@ body.dark .social-icons a:hover {
 .project-link:hover {
   background-color: #2c974b;
 }
+.card.in-progress {
+  border: 2px dashed #f39c12; /* laranja */
+  background-color: #fff8e1;   /* leve tom de amarelo */
+}
 
+.card.in-progress h3::after {
+  content: " ⚠️";
+}
